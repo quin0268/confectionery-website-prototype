@@ -54,6 +54,12 @@ h2 {
   font-family: "Roboto", sans-serif;
   text-align: center;
   font-size: 1.2em;
+  margin-top: 2em;
+  font-weight: bolder;
+}
+
+a {
+  text-decoration: none;
 }
 
 nav ul {
@@ -74,7 +80,6 @@ nav a {
   border-color: #000;
   color: #fff;
   padding: .5em .75em;
-  text-decoration: none;
 }
 
 nav a:hover {
@@ -90,12 +95,23 @@ img {
 figure {
   margin-top: 3em;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 figcaption {
   padding-left: .75rem;
   text-align: left;
   font-family: "Solway", serif;
+}
+
+figcaption a {
+  color: #ff3636;
+}
+
+figcaption a:hover {
+  font-weight: bolder;
+  text-decoration: underline;
 }
 
 .figeven figcaption {
@@ -109,23 +125,19 @@ b {
 }
 
 .signup {
-  width: 25em;
   display: flex;
-  padding: 1rem;
+  justify-content: center;
+  padding: .7rem;
   background-color: #fff;
   border: 6px solid #ff3636;
   border-radius: 1em;
   font-family: "Solway", serif;
-  position: absolute;
-  z-index: 1000;
-  right: 0;
-  bottom: .5em;
-  margin-left: .5em;
-  margin-right: .5em;
+  font-size: .9rem;
+  margin: .5em;
 }
 
 .signup p {
-  padding-right: 1rem;
+  padding-right: .7rem;
   text-align: right;
 }
 
@@ -134,7 +146,11 @@ b {
   border-radius: 1em;
   border: 3px solid #ff3636;
   color: #000;
-  padding: 1.5em;
+  text-align: center;
+  padding: 1em;
+  width: 15rem;
+  height: 50px;
+  align-self: center;
 }
 
 .signup a:hover {
@@ -152,11 +168,11 @@ footer {
   font-size: .75em;
 }
 
-@media only screen and (min-width:25em) {
+@media only screen and (min-width: 25em) {
 
 }
 
-@media only screen and (min-width:38em) {
+@media only screen and (min-width: 38em) {
   ul {
     display: flex;
     justify-content: space-around;
@@ -168,15 +184,33 @@ footer {
   }
 }
 
-@media only screen and (min-width:60em) {
+@media only screen and (min-width: 60em) {
   header {
     display: flex;
+  }
+
+  .company {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  nav {
     justify-content: space-around;
+    align-items: center;
+  }
+
+  figure img {
+    width: 25%;
+  }
+  figure {
+    display: flex;
   }
 }
 
-@media only screen and (min-width:90em) {
-  html {
-    background-color: #fff;
+@media only screen and (min-width: 90em) {
+  section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 }
