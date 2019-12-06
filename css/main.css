@@ -11,7 +11,6 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   position: relative;
-
 }
 
 *, *::before, *::after {
@@ -30,6 +29,10 @@ header {
   color: #fff;
   text-align: center;
   font-family: "Roboto", sans-serif;
+  position: absolute;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .company {
@@ -88,33 +91,37 @@ nav a:hover {
   font-weight: bolder;
 }
 
-img {
+.img-flex {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-top: 3em;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.img-flex img {
   width: 50%;
 }
 
-figure {
-  margin-top: 3em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-figcaption {
+section p {
   padding-left: .75rem;
   text-align: left;
   font-family: "Solway", serif;
 }
 
-figcaption a {
+section p a {
   color: #ff3636;
 }
 
-figcaption a:hover {
+section a:hover {
   font-weight: bolder;
   text-decoration: underline;
 }
 
-.figeven figcaption {
+.figeven p {
   padding-left: 0;
   padding-right: .75rem;
   text-align: right;
@@ -180,6 +187,10 @@ footer {
   html {
     font-size: 110%;
     line-height: 1.4;
+  }
+
+  .img-flex img {
+    width: 25%;
   }
 
   ul {
