@@ -97,6 +97,7 @@ header {
 }
 
 header:last-of-type {
+  position: absolute;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -146,7 +147,6 @@ nav li {
 nav a {
   font-size: 1.1rem;
   display: block;
-  border-width: thick;
   margin-top: .2em;
   margin-bottom: .2em;
   border-radius: 1em;
@@ -154,12 +154,12 @@ nav a {
   color: #fff;
   padding: .5em .75em;
   transition: 0.5s;
+  font-weight: bolder;
 }
 
 nav a:hover {
   background-color: #fff;
   color: #ff3636;
-  font-weight: bolder;
 }
 
 .img-flex {
