@@ -10,7 +10,6 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  position: relative;
 }
 
 ::selection {
@@ -28,6 +27,7 @@ body {
 
 .featured {
   display: block;
+  margin-top: 0;
 }
 
 .featured figure {
@@ -55,12 +55,41 @@ body {
   font-weight: bolder;
   color: #fff;
   background-color: #ff3636;
+  margin-top: 0;
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
 .featured p {
   text-align: center;
+}
+
+.welcome {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.welcome img {
+  display: block;
+  width: 100%;
+}
+
+.welcome h2 {
+  position: absolute;
+  bottom: 1em;
+  z-index: 1000;
+  margin: 0;
+  padding: 1em;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  font-size: 1.2em;
+  padding-top: 1em;
+  padding-bottom: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-weight: bolder;
+  width: 100%;
 }
 
 .items {
@@ -108,6 +137,14 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  margin: 0;
+  padding: .5rem;
+  width: 100%;
+  background-color: #ff3636;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  z-index: 100000;
 }
 
 .company {
@@ -126,18 +163,6 @@ h1 {
   margin: 0 0 .5rem;
   font-size: 2rem;
   text-align: center;
-}
-
-h2 {
-  font-family: Roboto, sans-serif;
-  text-align: center;
-  font-size: 1.2em;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  padding-left: 1em;
-  padding-right: 1em;
-  font-weight: bolder;
-  width: 100%;
 }
 
 a {
@@ -192,11 +217,11 @@ section p {
   font-family: Solway, serif;
 }
 
-.justify {
-  text-align: justify;
+.odd {
+  text-align: left;
 }
 
-.last {
+.even {
   text-align: right;
 }
 
@@ -318,10 +343,6 @@ footer {
   html {
     font-size: 120%;
     line-height: 1.5;
-  }
-
-  header {
-    display: flex;
   }
 
   .signup {
