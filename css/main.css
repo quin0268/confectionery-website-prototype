@@ -94,7 +94,7 @@ body {
   width: 100%;
 }
 
-header {
+.top {
   margin: 0;
   padding: .5rem;
   width: 100%;
@@ -104,8 +104,7 @@ header {
   font-family: Roboto, sans-serif;
 }
 
-header:last-of-type {
-  position: absolute;
+nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
