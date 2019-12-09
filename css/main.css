@@ -28,18 +28,19 @@ body {
 
 .featured {
   display: block;
-  transition: 0.5s;
 }
 
 .featured figure {
   background-color: #fff;
-  padding: 1.5em;
-  transition: 0.5s;
+  padding: 1em;
+  transition: .5s;
   border-radius: 2em;
+  text-align: center;
 }
 
 .featured figure:hover {
   background-color: #ff3636;
+  transition: .5s;
   color: #fff;
 }
 
@@ -47,7 +48,7 @@ body {
   color: #fff;
 }
 
-.featured p {
+.featured h3 {
   display: flex;
   justify-content: center;
   font-family: Roboto, sans-serif;
@@ -56,6 +57,10 @@ body {
   background-color: #ff3636;
   padding-top: 1em;
   padding-bottom: 1em;
+}
+
+.featured p {
+  text-align: center;
 }
 
 .items {
@@ -67,11 +72,11 @@ body {
   align-items: center;
   max-width: 600px;
   text-align: center;
-  padding: 1em;
+  padding: 0;
 }
 
 .items li {
-  width: 50%;
+  max-width: 50%;
   display: inline-block;
 }
 
@@ -79,10 +84,13 @@ body {
   color: red;
   font-family: Roboto, sans-serif;
   font-weight: bolder;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .items img {
-  max-height: 200px;
+  max-width: 200px;
   width: 100%;
 }
 
@@ -125,7 +133,10 @@ h2 {
   font-family: Roboto, sans-serif;
   text-align: center;
   font-size: 1.2em;
-  margin-top: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
   font-weight: bolder;
   width: 100%;
 }
@@ -153,7 +164,7 @@ nav a {
   border-color: #000;
   color: #fff;
   padding: .5em .75em;
-  transition: 0.5s;
+  transition: .5s;
   font-weight: bolder;
 }
 
@@ -213,7 +224,10 @@ b {
   border-radius: 1em;
   font-family: Solway, serif;
   font-size: .9rem;
-  margin: .5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .signup p {
@@ -278,6 +292,10 @@ footer {
     width: 25%;
   }
 
+  .signup a {
+    height: 70px;
+  }
+
   nav ul {
     display: flex;
     justify-content: space-around;
@@ -292,13 +310,24 @@ footer {
 
 @media only screen and (min-width: 60em) {
 
+  h1 {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+
+}
+
   html {
     font-size: 120%;
     line-height: 1.5;
   }
 
-  header {
+  .top {
     display: flex;
+  }
+
+  .signup {
+    width: 70%;
   }
 
   .items {
@@ -317,14 +346,6 @@ footer {
     align-items: center;
   }
 
-  section img {
-    width: 25%;
-  }
-
-  section {
-    display: flex;
-  }
-
 }
 
 @media only screen and (min-width: 90em) {
@@ -337,6 +358,15 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .img-flex {
+    width: 40%;
+  }
+
+  section img {
+    width: 50%;
   }
 
 }
