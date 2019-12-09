@@ -275,8 +275,8 @@ footer {
   }
 
   .imgcent {
-    margin-left: 5%;
-    margin-right: 5%;
+  margin-left: .5em;
+  margin-right: .5em;
   }
 
 }
@@ -355,14 +355,22 @@ footer {
   }
 
   section {
-    display: flex;
+    display: block;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: nowrap;
+    text-align: center;
   }
 
   .img-flex {
+    border: 6px solid #ff3636;
+    border-radius: 2em;
+    vertical-align: middle;
+    padding: 1em;
+    display: inline-block;
     width: 40%;
+    justify-content: space-around;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
   section img {
